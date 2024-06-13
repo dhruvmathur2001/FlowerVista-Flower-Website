@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 1520px;
+}
+
+ header{
+    background-color: pink;
+   
+    border: 1px solid;
+ }
+ .brand{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+ }
+.bars{
+    display: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90px;
+}
+.brand{
+    font-family: "Dancing Script", cursive;
+}
+.brand h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    /* margin-left: 280px; */
+}
+.items a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.3rem;
+}
+.items a:hover {
+    font-weight: bolder;
+}
+
+.border:hover {
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* margin-left: 300px; */
+}
+.home{
+    height: 200px;
+    width: 100%;
+    background-color: pink;
+}
+.icon a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+.info{
+    height: 600px;
+    width: 100%;
+    background-color: pink;
+    background-image: url(./Images/flower.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.home-content{
+    /* border: 1px solid; */
+    height: 250px;
+    width: 400px;
+    padding: 10px;
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 180px;
+    line-height: 18px;
+}
+.home-content h1{
+    font-size: 3.8rem;
+}
+.home-content h2{
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.home-content p{
+    font-size: 1.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    border: 1px;
+    border-radius: 7px;
+    padding: 7px;
+}
+.btn:hover{
+    border: 2px solid yellow;
+    font-weight: bolder;
+}
+.about{
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: lightcyan;
+    height: 500px;
+}
+.heading{
+    background-color: pink;
+    margin-top: 10px;
+    height: 45px;
+}
+.heading h1{
+    text-align: center;
+}
+.about-body{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+.bestseller{
+    height: 400px;
+    width: 50%;
+    background-image: url("./Images/best-seller.webp");
+    background-size: cover;
+}
+.about-info{
+    height: 400px;
+    width: 50%;
+    margin-left: 20px;
+}
+.about-info-body p{
+    text-align: justify;
+    margin-right: 50px;
+    font-size: 1.2rem;
+}
+.products {
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: lightcyan;
+}
+
+.line{
+    display: flex;
+    height: 530px;
+    width: 100%;
+    /* border: 1px solid; */
+}
+.prod{
+    margin: 20px;
+    height: 500px;
+    width: 23%;
+    border: 1px solid;
+    text-align: center;
+    line-height: 1rem;
+    box-shadow: 2px 2px 1px;
+    background-color: white;
+}
+.prod-img{
+    height: 400px;
+    width: 100%;
+    border-bottom: 1px solid;    
+}
+.prod-link{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding-right: 10px;
+}
+.prod:hover{
+    border: 3px solid;
+    height: 520px;
+    width: 25%;
+    box-shadow: 5px 10px 18px red;
+}
+.img{
+    height: 397px;
+    width: 100%;
+}
+.line h2,h3{
+    text-align: center;
+}
+.prod h1{
+    font-weight: bolder;
+}
+.or_cast{
+    font-size: 0.3rem;
+    gap: 5px;
+}
+.cart-button{
+    display: none;
+    margin-top: 8px;
+}
+.cart-button button {
+    background-color: yellow;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 2px 8px;
+}
+.prod:hover .cart-button{
+    display: block;
+}
+#REVIEWS{
+    background-color: lightcyan;
+}
+#REVIEWS h1 {
+    font-family:NIB Light Italic,serif;
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+}
+.review-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.review-box {
+    display: flex;
+    overflow-x: hidden;
+    /* Hide the horizontal scrollbar */
+    scroll-behavior: smooth;
+    width: 100%;
+    /* Adjust width as needed */
+    padding-bottom: 20px;
+    /* Add padding if necessary */
+    
+}
+
+.reviews {
+    min-width: 32%;
+    margin: 10px;
+    padding: 20px;
+    padding-bottom: 5px;
+    background-color: pink;
+    border-radius: 5px;
+}
+.reviews p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.review_rating{
+    display: flex;
+    gap: 0.7rem;
+}
+
+.rev_img img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.name {
+    font-size: 1.3rem;
+}
+.ratings{
+    margin-top: 4px;
+}
+
+.scroll-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scroll-button.left {
+    position: absolute;
+    left: 0;
+}
+
+.scroll-button.right {
+    position: absolute;
+    right: 0;
+}
+.checked{
+    color: orange;
+}
+footer {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.footer-container{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: NIB Light Italic, serif;
+}
+li{
+    list-style-type: none;
+    text-align: left;
+}
+.l2 span{
+    padding-left: 10px;
+}
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width:380px){
+    .navbar {
+            display: flex;
+            flex-wrap: ;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 80px;
+        }
+    
+    
+}
+    
